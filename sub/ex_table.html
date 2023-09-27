@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지원양식</title>
+    <title>입력양식태그</title>
 </head>
 <body>
-    <h1>수습 국원 지원 양식</h1>
-    <table border="1">
-        <tr>
-            <td rowspan="3">개인정보</td>
-            <td>이름</td>
-            <td width="200"></td>
-        </tr>
-        <tr>
-            <td>학과/학번</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>연락처</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>지원분야</td>
-            <td colspan="2"></td>
-        </tr>
-    </table>
-    <br>
-    <button>신청</button>
-    <a href="../ex003.html"><svg width="600" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M205 34.8c11.5 5.1 19 16.6 19 29.2v64H336c97.2 0 176 78.8 176 176c0 113.3-81.5 163.9-100.2 174.1c-2.5 1.4-5.3 1.9-8.1 1.9c-10.9 0-19.7-8.9-19.7-19.7c0-7.5 4.3-14.4 9.8-19.5c9.4-8.8 22.2-26.4 22.2-56.7c0-53-43-96-96-96H224v64c0 12.6-7.4 24.1-19 29.2s-25 3-34.4-5.4l-160-144C3.9 225.7 0 217.1 0 208s3.9-17.7 10.6-23.8l160-144c9.4-8.5 22.9-10.6 34.4-5.4z"/></svg></a>
+    <h1>입력양식 태그란?</h1>
+    <p>form 태그라는 큰 부모아래 input 태그라는 입력양식을 작성하는 구조</p>
+    <p>유저가 입력하거나 작성하는 구조는 input 태그의 속성으로 주로 변환하며 input 태그 외에 다른 태그들도 몇몇있다.</p>
+    <ul>
+        <li>특징1-form 태그는 눈에 보이지 않아 사용하지 않는 경우가 있는데 사용하지 않으면 DB와 연동할 수 없다.</li>
+        <li>특징2-form 태그 자체는 자동줄바꿈 기능을 가지고 있고, 내부에 작성하는 input 태그 등은 인라인태그이다.</li>
+    </ul>
+    <form action="http://www.google.com/search" method="get">
+        <label for="search-query">검색어</label>
+        <input type="text" id="search-query" name="q">
+        <button type="submit">검색</button>
+    </form>
 </body>
 </html>
