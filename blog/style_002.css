@@ -1,0 +1,263 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 구글폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  border: none;
+}
+
+
+
+/* 박스3과 박스4의 가로정렬 */
+/* after정렬방식 */
+.box3 {
+  float: left;
+  width: 70%;
+}
+.box4 {
+  float: left;
+  width: 30%;
+}
+.boxA:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* flex정렬방식 
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;}*/
+
+.logo {
+}
+.logo h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  color: aqua;
+}
+
+/* gnb설정 */
+.gnb {}
+.gnb ul {}
+.gnb ul li {}
+.gnb ul li a {
+  font-size: 14px;
+  display: block;
+  padding: 15px;
+}
+
+.gnb ul li a:hover {
+  background-color: #eee;
+}
+
+/* gnb li 가로정렬 */
+
+/* after정렬방식 */
+.gnb ul li {
+  float: left;
+  width: auto;
+}
+.gnb ul:after {content: ''; display: block; clear: both;}
+
+/* story설정 */
+.story {
+}
+.story h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+.story p {
+  margin-bottom: 10px;
+}
+.story p img {
+  width: 100%;
+  height: auto;
+}
+.story h2 {
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 26px;
+  border-left: 10px solid #1cba7c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* 스토리카테고리설정 */
+.story-cat {
+  margin-bottom: 25px;
+}
+.story-cat ul {
+  display: flex;
+}
+.story-cat ul li {
+  margin-right: 5px;
+}
+.story-cat ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 3px 5px;
+  background-color: beige;
+  border-radius: 2px;
+}
+.story-cat a:hover {background-color: #eee;}
+
+/* 작성일작성 */
+.story-info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.story-info i {
+  color: #aaa;
+  font-size: 20px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+/* sns설정 */
+.sns {
+  margin-top: 40px;
+}
+.sns ul {
+  display: flex;
+}
+.sns ul li {
+  width:33.3333%;
+  text-align: center;
+}
+.sns ul li a {
+  display: block;
+  padding: 10px 5px;
+}
+.sns ul li:nth-child(1) {background-color: #1da1f2;}
+.sns ul li:nth-child(2) {background-color: #1877f2;}
+/* 특집기사설정 */
+.sidemenu {
+  margin-bottom: 30px;
+}
+.sidemenu h1 {
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: dotted 2px #eee;
+  margin-bottom: 10px;
+}
+.sidemenu ul {
+}
+.sidemenu ul li {}
+.sidemenu ul li a {
+  display: block;
+  padding: 5px;
+}
+
+.sidemenu a:hover {background-color: antiquewhite;}
+
+.sidemenu i {margin-right: 5px;
+color:#aaa}
+
+
+/* 추천기사설정 */
+.recommend {
+  margin-bottom: 30px;
+}
+.recommend h1 {
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: dotted 2px #eee;
+  margin-bottom: 10px;
+}
+.recommend ul {
+}
+.recommend ul li {
+  margin-bottom: 10px;
+}
+
+.recommend ul li a {
+  position: relative;
+  display: block;
+}
+
+.recommend img {
+}
+.recommend .txt {
+  position: absolute; left: 0; bottom: 0; color: #fff; background-color: rgba(0, 0, 0, 0.5); width: 100%; padding: 5px;}
+
+/* 인기기사설정 */
+.popular {
+}
+.popular h1 {
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: dotted 2px #eee;
+  margin-bottom: 10px;
+}
+.popular ul {
+  padding: 10px;
+}
+.popular ul li {
+}
+.popular ul li a {
+  display: block;
+  padding: 5px;
+  color: #1cba7c;
+  border-bottom: dotted 1px #eee;
+}
+
+.popular ul li a:hover {background-color: aquamarine;}
+
+.popular a:after {content: ''; display: block; clear: both;}
+.popular img {float: left;}
+.popular .txt {float: none; margin-left: 70px; padding-left: 15px;}
+.popular span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 카피라이트설정 */
+.copy {}
+.copy p {
+  font-size: 14px;
+  color: #666
+}
+
+/* 박스2를 바형태로 설정 */
+.box2 {background-color: aquamarine;}
+
+/* 박스5 간격선 설정 */
+.box5 {border-top: dotted 1px #eee;}
+
+/* 전체사이즈 설정 */
+.box1, .gnb, .boxA, .box5 {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 박스3과 박스4의 간격조절 */
+.box3 {
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+/* 위아래 간격조절 */
+.box1 {padding-top: 8px;
+padding-bottom: 8px;}
+.boxA {padding-top: 40px;
+padding-bottom: 40px;}
+.box5 {padding-top: 15px;
+padding-bottom: 15px;}
