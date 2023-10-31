@@ -1,0 +1,181 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #111;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* header설정 */
+header {
+    position: fixed;
+    width: 700px;
+    height: 100%;
+    background: linear-gradient(-40deg, #e6fc55, #b9fb05, #97e031);
+    transform: skewX(-40deg);
+    left: -420px;
+}
+
+/* gnb설정 */
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+.gnb>li {}
+.gnb>li>a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    width: 220px;
+    height: 50px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.gnb>li>a em {
+    transform: skewX(40deg);
+}
+.gnb>li>a:hover {
+    background-color: #222;
+    color: #fff;
+}
+.gnb>li:nth-child(1)>a {
+    background-color: #111;
+    color: #fff;
+}
+
+/* 2뎁스설정 */
+.gnb>li {
+    position: relative;
+}
+.gnb>li>ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.gnb>li>ul>li {}
+.gnb>li>ul>li>a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #444;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #b9fb05;
+}
+.gnb>li>ul>li em {
+    display: block;
+    transform: skewX(40deg);
+}
+.gnb>li:hover ul {
+    opacity: 0.8;
+    left: 205px;
+}
+.gnb>li:nth-child(1) ul {
+    left: 205px;
+    top: -10px;
+    background-color: #444;
+    opacity: 0.8;
+}
+.gnb>li:nth-child(1) ul a {
+    color: #222;
+}
+
+/* sns설정 */
+.sns {
+    position: fixed;
+    width: 250px;
+    height: 50px;
+    background-color: beige;
+    right: 50px;
+    top: 50px;
+}
+
+.txtBox {
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+    right: 0;
+    top: 50%;
+    margin-top: -200px;
+}
+
+/* slide설정 */
+.slide {
+    position: fixed;
+    width: 800px;
+    height: 100%;
+    background-color: #222;
+    opacity: 0.5;
+    right: -800px;
+    bottom: 0;
+    transform: skewX(-40deg);
+    transition: all 0.5s;
+}
+.slide:hover {
+    right: -500px;
+}
+.slide>.con {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: 250px;
+    top: 0;
+    background-color: #000;
+    transition: all 0.8s;
+    opacity: 0;
+}
+.slide>.con>p {
+    position: absolute;
+    left: 50px;
+}
+.slide>.con>p:nth-child(1) {
+    bottom: 270px;
+}
+.slide>.con>p:nth-child(2) {
+    bottom: 160px;
+}
+.slide>.con>p:nth-child(3) {
+    bottom: 50px;
+}
+.slide>.con>p>em {
+    display: inline-block;
+    font-weight: bold;
+    color: #b9fb05;
+    transform: skewX(40deg);
+}
+.slide>.con>p a {}
+.slide>.con>p img {}
+.slide:hover .con {
+    left: 50px;
+    opacity: 0.8;
+}
