@@ -1,0 +1,262 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* 박스1 설정 */
+.box1 {
+    display: flex;
+    height: 150px;
+}
+.box1>div {}
+.box1>.box1-1 {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.box1>.box1-1>.logo {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box1>.box1-1>.logo>h1 {
+    font-size: 30px;
+}
+.box1>.box1-2 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1>.box1-2>.gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1>.box1-2>.gnb>ul {
+    display: flex;
+}
+.box1>.box1-2>.gnb>ul>li {
+    margin: 0 7px;
+}
+.box1>.box1-2>.gnb>ul>li>a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+.box1>.box1-2>.gnb>ul>li:hover a {
+    text-decoration: underline;
+}
+
+/* 박스2 설정 */
+.box2 {
+    height: 800px;
+}
+.box2>.box2-1 {
+    display: flex;
+    height: 600px;
+}
+.box2>.box2-1>.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.box2>.box2-1>.hero>.txtBox {
+    width: 50%;
+    background-color: #364f6b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2>.box2-1>.hero>.txtBox>p {
+    width: 60%;
+    color: #fff;
+    padding: 0 20px;
+}
+.box2>.box2-1>.hero>.txtBox>p:nth-child(1) {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: 'Lobster', sans-serif;
+}
+.box2>.box2-1>.hero>.txtBox>p:nth-child(1)>strong{
+    font-size: 42px;
+    font-family: 'Lobster', sans-serif;
+    color: #ffcef3;
+}
+.box2>.box2-1>.hero>.txtBox>p:nth-child(2) {
+    font-size: 16px;
+}
+.box2>.box2-1>.hero>.imgBox {
+    width: 50%;
+    background-color: #f7fbfc;
+}
+.box2>.box2-1>.hero>.imgBox>img {
+    width: 100%;
+    height: 100%;
+}
+.box2>.box2-2 {
+    height: 200px;
+}
+.box2>.box2-2>.localmenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.box2>.box2-2>.localmenu>a {
+    display: block;
+    width: 25%;
+    height: 100%;
+}
+.box2>.box2-2>.localmenu>a:nth-child(1) {
+    background-color: #a1eafb;
+}
+.box2>.box2-2>.localmenu>a:nth-child(2) {
+    background-color: #ffcfdf;
+}
+.box2>.box2-2>.localmenu>a:nth-child(3) {
+    background-color: #fc5185;
+}
+.box2>.box2-2>.localmenu>a:nth-child(4) {
+    background-color: #ffffd2;
+}
+.box2>.box2-2>.localmenu>a>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2>.box2-2>.localmenu>a>.menu1 {}
+.box2>.box2-2>.localmenu>a>.menu1>p {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.box2>.box2-2>.localmenu>a>.menu1>span {
+    font-size: 18px;
+    color: #fff;
+}
+.box2>.box2-2>.localmenu>a>.menu2 {}
+.box2>.box2-2>.localmenu>a>.menu2>p {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.box2>.box2-2>.localmenu>a>.menu2>span {
+    font-size: 18px;
+    color: #000;
+}
+.box2>.box2-2>.localmenu>a>.menu3 {}
+.box2>.box2-2>.localmenu>a>.menu3>p {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.box2>.box2-2>.localmenu>a>.menu3>span {
+    font-size: 18px;
+    color: #fff;
+}
+.box2>.box2-2>.localmenu>a>.menu4 {}
+.box2>.box2-2>.localmenu>a>.menu4>p {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.box2>.box2-2>.localmenu>a>.menu4>span {
+    font-size: 18px;
+    color: #000;
+}
+
+/* 박스3 설정 */
+.box3 {
+    height: 650px;
+    background-color: #3fc1c9;
+}
+.box3>.box3-1 {
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box3>.box3-1>h1 {
+    font-size: 32px;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.box3>.box3-1>p {
+    font-size: 14px;
+}
+.box3>.box3-2 {
+    display: flex;
+}
+.box3>.box3-2>div {
+    width: 50%;
+    height: 450px;
+}
+.box3>.box3-2>.imgBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.box3>.box3-2>.imgBox>img {
+    width: 60%;
+    height: 80%;
+    background-color: aliceblue;
+}
+.box3>.box3-2>.listBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3>.box3-2>.listBox>ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.box3>.box3-2>.listBox>ul>li {}
+.box3>.box3-2>.listBox>ul>li>a {
+    display: block;
+    text-align: center;
+}
+.box3>.box3-2>.listBox>ul>li>a>img {
+    width: 50%;
+    background-color: aliceblue;
+}
+.box3>.box3-2>.listBox>ul>li>a>strong {
+    display: block;
+}
+.box3>.box3-2>.listBox>ul>li>a>p {}
