@@ -1,0 +1,163 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #111;
+    color: #bbb;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 전체화면설정 */
+.wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* 로고설정 */
+.wrap h1 {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 240px;
+    text-align: center;
+    line-height: 0.8;
+}
+.wrap strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.1;
+    display: block;
+    font-family: "verdana";
+}
+.wrap img {
+    width: 200px;
+}
+.wrap h1 span {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    color: #444;
+}
+
+/* 슬로건영역설정 */
+.txt {
+    position: fixed;
+    top: 400px;
+    left: 40px;
+    color: #111;
+    font-size: 30px;
+    line-height: 0.8;
+}
+.txt span {
+    color: #888;
+}
+
+/* section설정 */
+section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+article {
+    width: 12%;
+    height: 100%;
+    float: right;
+    background-image: url('img/divider.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    overflow: hidden;
+}
+article h2 {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    border-left: 3px solid #555;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    z-index: 3;
+    transition: all 0.5s;
+}
+article div {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+    transition: all 0.5s;
+}
+article:hover div {
+    height: 70px;
+    top: 270px;
+}
+article:hover h2 {
+    color: #fff;
+    border-color: #fff;
+}
+article video {
+    width: auto;
+    height: 100%;
+    opacity: 0;
+}
+article h3 {
+    position: absolute;
+    bottom: 210px;
+    right: -310px;
+    font-size: 40px;
+    color: #fff;
+}
+article p {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 50px;
+    right: -310px;
+    text-align: right;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 넘치는 글이 있을경우 말줄임표를 위해 위에 3가지 속성을 세트처럼 사용한다. */
+}

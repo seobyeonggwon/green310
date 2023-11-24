@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트_엘리먼트</title>
+</head>
+<body>
+    
+    <section class="todolist">
+        <h1>오늘 저녁에 할일</h1>
+        <ul id="list">
+
+        </ul>
+    </section>
+    <section class="weekList">
+        <h1>주말에 할일</h1>
+        <ul id="weekendList">
+
+        </ul>
+        <form action="#" id="form">
+            <input type="text" name="list">
+            <input type="submit" value="검색">
+        </form>
+    </section>
+    <section class="year">
+        <h1>1년 동안 할일</h1>
+        <ul id="yearList">
+
+        </ul>
+    </section>
+    <section class="month">
+        <h1>한달 동안 할일</h1>
+        <ul id="monthList">
+
+        </ul>
+    </section>
+    <script>
+
+        document.getElementById('form').onsubmit = function(){
+            console.log('클릭했습니다.');
+            var txt = document.getElementById('form').list.value;
+            console.log(txt);
+            return false;
+        }
+
+
+
+
+        var todo = ['잠자기', '마사지받기', '게임하기', '장보기', '티비보기', '넷플릭스보기', '디즈니플러스보기', '빨래하기']; /* 배열 선언 */
+        todo.push('청소하기'); /* 리스트(배열) 변수 추가 */
+        console.log(todo); /* 리스트(배열)를 콘솔로그에 보여줌 */
+        console.log(todo.length); /* 리스트(배열)의 크기를 콘솔로그에 보여줌 */
+        console.log(todo[1]); /* 리스트(배열) 2번째에 있는 변수의 내용을 콘솔로그에 보여줌 */
+        for(i = 0; i < todo.length; i++){
+            var li = document.createElement('li');
+            li.textContent = todo[i];
+            document.getElementById('list').appendChild(li);
+        }
+
+        var weekend = ['영화보기', '드라마보기', '음악듣기', '광합성하기', '외식하기', '실내스포츠 하기', '쇼핑하기', '맛집가서혼밥', '게임하기', '자전거타기'];
+        weekend.push('산책하기');
+        console.log(weekend);
+        console.log(weekend.length);
+        console.log(weekend[10]);
+
+        for(j = 0; j < weekend.length; j++){
+            var li2 = document.createElement('li');
+            li2.textContent = weekend[j];
+            document.getElementById('weekendList').appendChild(li2);
+        }
+
+        var year = ['취업', '자격증취득', '대학교졸업', '기타등등'];
+        year.push('자취하기');
+        console.log(year);
+        console.log(year.length);
+        console.log(year[5-1]);
+        
+        for(k = 0 ; k < year.length; k++){
+            var li3 = document.createElement('li');
+            li3.textContent = year[k];
+            document.getElementById('yearList').appendChild(li3);
+        }
+
+        var month = ['html', 'css', 'javascript', 'node.js', 'DB', '프로젝트 완성'];
+        month.push('포트폴리오 제작');
+        console.log(month);
+        console.log(month.length);
+        console.log(month[7-1]);
+
+        for(l = 0; l < month.length; l++){
+            var li4 = document.createElement('li');
+            li4.textContent = month[l];
+            document.getElementById('monthList').appendChild(li4);
+        }
+    </script>
+</body>
+</html>

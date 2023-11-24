@@ -1,0 +1,101 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* logo설정 */
+.logo {}
+.logo>a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* gnb설정 */
+.gnb {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: yellow;
+}
+.gnb>li {
+    background-color: aqua;
+}
+.gnb>li>a {
+    display: block;
+    padding: 10px 15px;
+}
+
+/* hero설정 */
+.topImg {
+    max-width: 100%;
+}
+
+/* notice설정 */
+.notice {}
+.notice>h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.notice>li {}
+.notice>li>a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    border-bottom: dotted 2px #666;
+}
+.notice>li>a>time {
+    color: #666;
+    margin-right: 15px;
+}
+
+
+/* 미디어쿼리구간 ############################################## */
+
+
+/* 레이아웃설정 */
+
+/* 박스1과 박스2의 가로정렬 */
+/* after정렬방식 */
+/* .box1 {
+    float: left;
+    width: 50%;
+}
+.box2 {
+    float: left;
+    width: 50%;
+}
+.boxA:after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+/* flex정렬방식 */
+.boxA {
+    display: flex;
+}
+.box1 {
+    width: 50%;
+}
+.box2 {
+    width: 50%;
+}
+

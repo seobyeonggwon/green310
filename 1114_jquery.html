@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트_제이쿼리</title>
+    
+    <style>
+        li.on {
+            color: red;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        h4 {
+            width: 100%;
+            height: 30px;
+            background-color: blueviolet;
+            color: #fff;
+        }
+        .wrap {
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            width: 50%;
+            height: 100%;
+            background-color: bisque;
+            position: relative;
+            overflow: hidden;
+        }
+        .box p {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+        .box p.on {
+            opacity: 1;
+            transform: rotate(360deg);
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            // 클릭한 나 자신에게 글씨색 변경
+            $('.click').children('li').click(function(){
+                // 실행문
+                $('.click').children('li').removeClass('on');
+                $(this).addClass('on');
+            });
+
+            // index로 순번찾아 h4에 출력하기
+            $('.idx li').click(function(){
+                var i = $(this).index();
+                $('h4').text(i);
+                // 박스 안에 있는 p의 해당박스 보이기
+                $('.box p').removeClass('on');
+                $('.box p').eq(i).addClass('on');
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>this문</h2>
+    <p>this란 선택자 중에서 이벤트가 일어나는 주체<br>
+        클릭한 혹은 마우스가 들어간 나 자신</p>
+    <h3>클릭한 나 자신에게 글씨색 변경</h3>
+    <ul class="click">
+        <li class="on">리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+    </ul>
+    <h2>index문</h2>
+    <p>선택자의 순서값을 찾아주는 구문<br>
+        this의 순번찾기</p>
+    <h3>클릭한 나의 순번찾기</h3>
+    <h4></h4>
+    <div class="wrap">
+        <ul class="idx">
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+        <div class="box">
+            <p>박스1번입니다.</p>
+            <p>박스2번입니다.</p>
+            <p>박스3번입니다.</p>
+            <p>박스4번입니다.</p>
+            <p>박스5번입니다.</p>
+            <p>박스6번입니다.</p>
+            <p>박스7번입니다.</p>
+            <p>박스8번입니다.</p>
+        </div>
+    </div>
+</body>
+</html>

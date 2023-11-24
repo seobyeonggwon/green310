@@ -1,0 +1,329 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* logo설정 */
+.logo {}
+.logo>h1 {
+    font-size: 30px;
+}
+.logo>h1>a {}
+.logo>h1>a>img {}
+
+/* gnb설정 */
+.gnb {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.gnb>ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+}
+.gnb>ul>li {}
+.gnb>ul>li>a {
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.gnb>ul>li>a:hover {
+    background-color: #eee;
+}
+
+/* hero사진설정 */
+.topImg {
+    max-width: 100%;
+}
+
+/* 박스4설정 */
+.box4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* news설정 */
+.news {
+    border: 5px solid #ddd;
+    /* 다양한 브라우저에도 적용할 수 있는 벤더픽스 */
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -webkit-box-sizing: border-box; 
+    padding: 20px;
+}
+.news>h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+}
+.news>ul {}
+.news>ul>li {}
+.news>ul>li>a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    border-bottom: dotted 2px #ddd;
+}
+.news>ul>li>a>time {
+    color: #888;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* snsSet설정 */
+.snsSet>ul {}
+.snsSet>ul>li {}
+.snsSet>ul>li>a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ccc;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.snsSet>ul>li:nth-child(1)>a {
+    background-color: #1da1f2;
+}
+.snsSet>ul>li:nth-child(2) a {
+    background-color: #1877f2;
+}
+.snsSet>ul>li:nth-child(3) a {
+    background-color: #c13584;
+}
+.snsSet>ul>li>a>i {
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+.snsSet>.sns-info {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.sns-info {
+	position: relative;
+	background: #ddd;
+}
+.sns-info:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-top-color: #ddd;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+/* copyright설정 */
+.box5 {
+    background-color: #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.copyright>p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 박스6상세설정 */
+.box6 .summary {
+    text-align: center;
+}
+.box6 .summary>a {
+    display: block;
+    background-color: #222;
+    color: #fff;
+}
+.box6 .summary>a>i {
+    display: block;
+    font-size: 38px;
+    padding: 40px 0;
+}
+.box6 .summary>a>h2 {
+    font-size: 20px;
+    padding: 5px 0;
+}
+.box6 .summary>a>p {
+    font-size: 12px;
+    padding: 15px 0;
+    background-color: #524e3c;
+}
+.fa-database {
+    background-color: #bfbd13;
+}
+.fa-bar-chart {
+    background-color: #c58839;
+}
+.fa-clock-o {
+    background-color: #859f46;
+}
+
+/* 위아래 여백설정 */
+.boxA {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.box4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.news {
+    margin-bottom: 10px;
+}
+.box6 {
+    padding-top: 20px;
+}
+.box6>div {
+    padding-bottom: 10px;
+}
+
+/* 좌우 여백설정 */
+.boxA, .box4, .box5 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* btn설정 */
+#btn {
+    background-color: #fff;
+    border: solid 1px #aaa;
+    padding: 6px 12px;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+#btn>i {
+    font-size: 18px;
+    color: #888;
+}
+#btn>span {
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+/* 미디어쿼리구간 ################################################### */
+/* 599px이하 설정 */
+@media(max-width:599px){
+
+}
+
+/* 767px이하 설정 */
+@media(max-width:767px){
+    .box2.on {
+        border-top: 1px solid #000;
+        margin-top: 10px;
+    }
+    #menu {
+        display: none;
+    }
+    .gnb>ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .gnb>ul>li {
+        width: 100%;
+    }
+    .gnb>ul>li>a {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* 768px이상 설정 */
+@media(min-width:768px){
+
+    /* 레이아웃설정 */
+
+    /* 박스1과 박스2의 가로정렬 */
+    /* atfer정렬방식 */
+    /* .box1 {
+        float: left;
+        width: 50%;
+    }
+    .box2 {
+        float: left;
+        width: 50%;
+    }
+    .boxA:after {content: ''; display: block; clear: both;} */
+
+    /* flex정렬방식 */
+    .boxA {
+        display: flex;
+    }
+    .boxA>div {
+        width: 50%;
+    }
+
+    /* 박스4설정 */
+    .box4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .news {
+        width: 68%;
+        margin-right: 2%;
+        /* padding-right: 35px;*/
+        /* 다양한 브라우저에도 적용할 수 있는 벤더픽스 
+        box-sizing: border-box;
+        -o-box-sizing: border-box; / -o-:오페라
+        -moz-box-sizing: border-box; / -moz-:모질라
+        -ms-box-sizing:border-box; / -ms-:마이크로소프트 엣지
+        -webkit-box-sizing: border-box; / -webkit-:다른 브라우저 */
+    }
+    .snsSet {
+        width: 30%;
+    }
+
+    /* 박스6설정 */
+    .box6 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box6>div {
+        width: 32%;
+    }
+    /* btn설정 */
+    #btn {
+        display: none;
+    }
+}
+
+/* 1290px이상 설정 */
+@media(min-width:1290px){
+    .boxA, .box3, .box4, .box5, .box6{
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
